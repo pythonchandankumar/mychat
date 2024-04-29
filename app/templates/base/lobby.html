@@ -1,0 +1,16 @@
+{% extends "base/main.html" %}
+ {% load static %}
+{% block title %}
+    lobby
+{% endblock title %}
+
+{% block content %}
+<section id ="form-container">
+<img src="{% static 'images/Chat.png' %}" id="logo">
+<div>
+<h1> Welcome to my Chat App</h1>
+<p id="group"> A group video calling for you and your friends</p>
+</div>
+<a href ="{% url 'room' %}" class="join"> Join to video call </a>
+</section>
+{% endblock content %}
